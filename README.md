@@ -44,7 +44,6 @@ Things you may want to cover:
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :group_users
 - belongs_to :user
 - belongs_to :group
 
@@ -56,16 +55,17 @@ Things you may want to cover:
 |mail|sting|null: false, unique:true|
 
 ### Association
-- has_many :group,through :group_user
-- has_many :message
-- has_many :image
+- has_many :groups,through :group_users
+- has_many :messages
+- has_many :images
 
 ## groupテーブル
 
 |Column|Type|Option|
 |------|----|------|
-|group_name|string|index: true, null: false, foreign_key: true|
-|add_name|string|null: false, foreign_key: true
+|name|string|index: true, null: false,|
 
 ### Association
-- belongs_to :user, through : group_user
+- has_many :users, through : group_users
+- has_many :messages
+- has_many :group_users
