@@ -35,10 +35,12 @@
       box-sizing: border-box;
       padding: 20px 0 40px;
       &__name {
-        font-size: 15px;
+        color: $white;
+        font-size: 16px;
       }
       &__message {
-        font-size: 11px;
+        color: $white;
+        font-size: 16px;
         margin-top: 5px;
       }
     }
