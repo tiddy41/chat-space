@@ -1,3 +1,4 @@
+server '52.68.193.193', user: 'ec2-user', roles: %w{app db web}
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -49,9 +50,9 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-server '52.68.193.193',
-  user: 'ec2-user',
-  roles: %w{web app},
+# server '52.68.193.193',
+#   user: 'ec2-user',
+#   roles: %w{web app},
 #   ssh_options: {
 #     user: "user_name", # overrides user setting above
 #     keys: %w(/home/user_name/.ssh/id_rsa),
