@@ -28,10 +28,11 @@
       float: right;
       height: 40px;
       line-height: 40px;
-      margin-top: 28px;
+      margin-top: 30px;
       padding: 0 20px;
       a {
         text-decoration: none;
+        color: $light_blue;
       }
     }
   }
@@ -76,7 +77,8 @@
       border: none;
       float: left;
       height: 50px;
-      width: calc(100% - 150px);
+      width: calc(100% - 197px);
+      padding: 0 40px 0 10px;
     }
     &__mask {
       background-color: $white;
