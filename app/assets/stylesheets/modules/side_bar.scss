@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: $white;
   width: 300px;
+  background-color: $side_blue_light;
   .header {
     background-color: $side_blue_dark;
     height: 100px;
@@ -32,7 +33,7 @@
     height: calc(100vh - 100px);
     padding: 0 20px;
     width: calc(100% - 40px);
-    overflow: scroll;
+    overflow-y: scroll;
     a {
       text-decoration: none;
     }

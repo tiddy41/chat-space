@@ -6,6 +6,7 @@ class GroupsController < ApplicationController
   def new
     @group = Group.new
     @group.users << current_user
+    @value = "登録する"
   end
 
   def create
@@ -26,6 +27,7 @@ class GroupsController < ApplicationController
   end
   
   def edit
+    @value = "更新する"
   end
   
 
